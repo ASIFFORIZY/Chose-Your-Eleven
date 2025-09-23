@@ -1,0 +1,122 @@
+[
+  {
+    "player-image": "https://i.ibb.co/DPpP81xV/Sai-Sudharsan.jpg",
+    "player-name": "Sai Sudharsan",
+    "player-country": "India",
+    "playing-role": "Batsman",
+    "rating": 9.2,
+    "batting-style": "Left-Handed Bat",
+    "bowling-style": "Right-arm Offbreak",
+    "price": "2,74,60,000 USD"
+  },
+  {
+    "player-image": "https://i.ibb.co/qFNMgXT6/SKY-1024x907.jpg",
+    "player-name": "Suryakumar Yadav",
+    "player-country": "India",
+    "playing-role": "Batsman",
+    "rating": 9.1,
+    "batting-style": "Right-Handed Bat",
+    "bowling-style": "Right-arm Offbreak",
+    "price": "10,98,40,000 USD"
+  },
+  {
+    "player-image": "https://i.ibb.co/8nqKq98R/virat-kohli.jpg",
+    "player-name": "Virat Kohli",
+    "player-country": "India",
+    "playing-role": "Batsman",
+    "rating": 9.0,
+    "batting-style": "Right-Handed Bat",
+    "bowling-style": "Right-arm Medium",
+    "price": "20,59,50,000 USD"
+  },
+  {
+    "player-image": "https://i.ibb.co/WvhG6X5C/Shubman-Gill.jpg",
+    "player-name": "Shubman Gill",
+    "player-country": "India",
+    "playing-role": "Batsman",
+    "rating": 8.9,
+    "batting-style": "Right-Handed Bat",
+    "bowling-style": "Right-arm Offbreak",
+    "price": "9,61,10,000 USD"
+  },
+  {
+    "player-image": "https://i.ibb.co/0yvbWtfh/Mitchell-Marsh.jpg",
+    "player-name": "Mitchell Marsh",
+    "player-country": "Australia",
+    "playing-role": "All-rounder",
+    "rating": 8.8,
+    "batting-style": "Right-Handed Bat",
+    "bowling-style": "Right-arm Fast-Medium",
+    "price": "8,92,45,000 USD"
+  },
+  {
+    "player-image": "https://i.ibb.co/Z6ndkrF3/shreyas-iyer.jpg",
+    "player-name": "Shreyas Iyer",
+    "player-country": "India",
+    "playing-role": "Batsman",
+    "rating": 8.7,
+    "batting-style": "Right-Handed Bat",
+    "bowling-style": "Right-arm Offbreak",
+    "price": "16,81,82,500 USD"
+  },
+  {
+    "player-image": "https://i.ibb.co/WvxVrpRM/JB.jpg",
+    "player-name": "Jos Buttler",
+    "player-country": "England",
+    "playing-role": "Wicketkeeper-Batsman",
+    "rating": 8.6,
+    "batting-style": "Right-Handed Bat",
+    "bowling-style": "N/A",
+    "price": "13,73,15,900 USD"
+  },
+  {
+    "player-image": "https://i.ibb.co/YT0fx5hh/KL.jpg",
+    "player-name": "KL Rahul",
+    "player-country": "India",
+    "playing-role": "Wicketkeeper-Batsman",
+    "rating": 8.5,
+    "batting-style": "Right-Handed Bat",
+    "bowling-style": "N/A",
+    "price": "23,34,36,900 USD"
+  },
+  {
+    "player-image": "https://i.ibb.co/fG4LRNjD/SAB.jpg",
+    "player-name": "Shakib Al Hasan",
+    "player-country": "Bangladesh",
+    "playing-role": "All-Rounder",
+    "rating": 8.4,
+    "batting-style": "Left-Handed Bat",
+    "bowling-style": "Left-arm Orthodox",
+    "price": "13,73,15,900 USD"
+  },
+  {
+    "player-image": "https://i.ibb.co/tTDPF77j/imgi-1-311942-6.jpg",
+    "player-name": "Noor Ahmad",
+    "player-country": "Afghanistan",
+    "playing-role": "Bowler",
+    "rating": 8.3,
+    "batting-style": "Right-Handed Bat",
+    "bowling-style": "Left-arm wrist-spin",
+    "price": "6,17,92,155 USD"
+  },
+  {
+    "player-image": "https://i.ibb.co/5X72D01Q/JH.png",
+    "player-name": "Josh Hazlewood",
+    "player-country": "Australia",
+    "playing-role": "Bowler",
+    "rating": 8.2,
+    "batting-style": "Left-Handed Bat",
+    "bowling-style": "Right-arm Fast-Medium",
+    "price": "10,63,64,325 USD"
+  },
+  {
+    "player-image": "https://i.ibb.co/4RTVhW9H/JPB.jpg",
+    "player-name": "Jasprit Bumrah",
+    "player-country": "India",
+    "playing-role": "Bowler",
+    "rating": 8.1,
+    "batting-style": "Right-Handed Bat",
+    "bowling-style": "Right-arm Fast",
+    "price": "16,47,79,080 USD"
+  }
+]
