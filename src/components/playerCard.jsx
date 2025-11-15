@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import image from '../assets/Group.png';
 import flag from '../assets/flag.png';
 
-const PlayerCard = ({ player, setBalance, balance }) => {
+const PlayerCard = ({ player, setBalance, balance, buyPlayer,setBuyPlayer }) => {
 
 
 
@@ -10,7 +10,7 @@ const PlayerCard = ({ player, setBalance, balance }) => {
 
   const [isSelected, setIsSelected] = useState(false);
 
-  const handChoseBtn = () => {
+  const handChoseBtn = (playerData) => {
     if (balance < playerPrice) {
       alert("Not enough Balance");
       return;
@@ -18,6 +18,8 @@ const PlayerCard = ({ player, setBalance, balance }) => {
 
     setIsSelected(true);
     setBalance(balance - playerPrice);
+
+    setBuyPlayer([...buyPlayer , playerData])
   };
 
   return (
@@ -60,7 +62,7 @@ const PlayerCard = ({ player, setBalance, balance }) => {
 
         <div className="card-actions justify-between items-center mt-3">
           <h2 className="text-sm font-semibold ">Price: $ {player["price"]}</h2>
-          <button disabled={isSelected} onClick={handChoseBtn} className=" border border-gray-200 rounded-sm px-3 py-1 text-sm capitalize" >{isSelected ? "Selected" : "Chose player"}</button>
+          <button disabled={isSelected}  onClick={() => handChoseBtn(player)} className=" border border-gray-200 rounded-sm px-3 py-1 text-sm capitalize" >{isSelected ? "Selected" : "Chose player"}</button>
         </div>
       </div>
     </div>
