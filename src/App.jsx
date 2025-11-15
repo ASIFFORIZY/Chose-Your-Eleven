@@ -11,13 +11,14 @@ const App = () => {
 
 
   const [toggle, setToggle] = useState(true);
+  const [balance , setBalance] = useState(600000000);
 
 
   
 
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar balance={balance} ></Navbar>
       <div className=' max-w-[1200px] mx-auto my-10 flex justify-between items-center'>
         <h1 className='lg:text-4xl font-bold' >Players </h1>
         <div  >
@@ -29,7 +30,7 @@ const App = () => {
 
       {
         toggle === true ? <Suspense fallback={<span class="loading loading-bars loading-xl"></span>} >
-          <AvailablePlayer fetchPlayers={fetchPlayers}  ></AvailablePlayer>
+          <AvailablePlayer balance={balance}  setBalance={ setBalance} fetchPlayers={fetchPlayers}  ></AvailablePlayer>
         </Suspense> : <SelectedPlayers></SelectedPlayers>
       }
 

@@ -4,7 +4,7 @@ import logo from "../assets/logo.png"
 
 
 
-const Navbar = () => {
+const Navbar = ({balance}) => {
   return (
     <div>
       <div className="navbar shadow-sm max-w-[1200px] mx-auto ">
@@ -14,7 +14,7 @@ const Navbar = () => {
           <img src={logo} alt="" />
         </div>
         <div className="flex-none">
-          Coin 70000000000 🪙
+          Coin {balance} 🪙
         </div>
       </div>
     </div>
