@@ -1,68 +1,53 @@
-import React, { useState } from 'react';
-import userImg from "../assets/Group.png";
-import flag from "../assets/flag.png";
-import AvailablePlayer from './AvailablePlayer';
+import React from 'react';
+import image from '../assets/Group.png';
+import flag from '../assets/flag.png';
 
-const PlayerCard = ({ player,setBalance,availableBalance }) => {
-  const [isSelected, setSelected] = useState(false);
-  const playerPrice = player["price"].split("USD").join("").split(",").join("") ;
-
+const PlayerCard = ({ player }) => {
   return (
-    <div className="card bg-base-100 shadow-sm p-4">
-      <figure>
-        <div className="w-full h-[200px]">
-          <img src={player["player-image"]} alt={player["player-name"]} />
-        </div>
+    <div className="card bg-base-100 w-96 shadow-sm p-5">
+      {/* Image section */}
+      <figure className="h-56 w-full overflow-hidden rounded-md">
+        <img
+          src={player["player-image"]}
+          alt={player["player-name"]}
+          className="w-full h-full object-cover"
+        />
       </figure>
-      <div className="card-body px-2 py-4">
-        <div className="flex items-center gap-2">
-          <img src={userImg} alt="" className="h-[15px] w-[15px]" />
-          <h2 className="card-title">{player["player-name"]}</h2>
+
+      {/* Card body */}
+      <div className="card-body">
+        {/* Player name + icon */}
+        <div className="flex gap-2 items-center">
+          <img className="w-4 h-4" src={image} alt="icon" />
+          <h2 className="card-title text-lg font-semibold">{player["player-name"]}</h2>
         </div>
 
-        <div className="flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <img src={flag} alt="" className="h-3" />
-            <span>{player["player-country"]}</span>
+        {/* Country + role */}
+        <div className="flex justify-between items-center mt-2">
+          <div className="flex items-center gap-1">
+            <img className="w-4 h-4" src={flag} alt="flag" />
+            <p className="text-sm text-gray-600">{player['player-country']}</p>
           </div>
-          <button className="px-3 rounded-lg border border-gray-300 bg-gray-200 text-black">
+          <button className="bg-gray-50 border border-gray-200 rounded-sm px-3 py-1 text-sm capitalize">
             {player["playing-role"]}
           </button>
         </div>
 
-        <div className="w-full text-gray-300">
-          <hr />
+        <hr className="my-2 border-gray-200" />
+
+        {/* Ratings section */}
+        <div className="mt-2">
+          <h1 className="font-medium mb-1">Ratings</h1>
+          <div className="flex justify-between text-sm text-gray-600">
+            <span className='text-gray-900'>{player["batting-style"] }</span>
+            <span className='text-gray-400' >{player["bowling-style"] }</span>
+          </div>
         </div>
 
-        <div className="flex justify-between items-center font-semibold">
-          <h3>Rating:</h3>
-          <span>{player["rating"]}</span>
-        </div>
-
-        <div className="flex justify-between items-center">
-          <h3 className="font-semibold">{player["batting-style"]}</h3>
-          <span className="text-gray-400">{player["bowling-style"]}</span>
-        </div>
-
-        <div className="flex justify-between items-center text-black">
-          <h3 className="font-semibold">
-            Price: <span className="text-gray-500">{player["price"]}</span>
-          </h3>
-          <button
-          
-            disabled={isSelected}
-            onClick={() => {
-                if(availableBalance<playerPrice){
-                    alert("not enough Balance")
-                    return
-                }
-                setSelected(true)
-                setBalance(availableBalance-playerPrice)
-            }}
-            className="px-3 rounded-lg border border-gray-300 bg-gray-200"
-          >
-            {isSelected ? "Selected" : "Choose Player"}
-          </button>
+        {/* Price and tag */}
+        <div className="card-actions justify-between items-center mt-3">
+          <h2 className="text-sm font-semibold ">Price: $ {player["price"]}</h2>
+          <div className="bg-gray-50 border border-gray-200 rounded-sm px-3 py-1 text-sm capitalize">Chose Player</div>
         </div>
       </div>
     </div>
